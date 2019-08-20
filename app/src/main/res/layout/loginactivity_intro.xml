@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:appsrc="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        //CI영역
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="물건 대여 마켓"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                />
+
+            <ImageView
+                android:id="@+id/login_ci"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                app:srcCompat="@drawable/ci" />
+        </LinearLayout>
+
+        //ID,PW입력 영역
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <EditText
+                android:id="@+id/login_id"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="10dp"
+                android:background="@drawable/border"
+                android:hint="ID"
+                android:paddingLeft="10dp"
+                android:textSize="15dp"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/login_pw"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="8dp"
+                android:background="@drawable/border"
+                android:hint="PASSWORD"
+                android:paddingLeft="10dp"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        //로그인, 회원가입 버튼 영역.
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+
+            <!--<br.com.bloder.magic.view.MagicButton-->
+                <!--android:id="@+id/loginbtn"-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:text="로그인"-->
+                <!--app:button_icon="@drawable/login"-->
+                <!--app:button_icon_height="25dp"-->
+                <!--app:button_icon_width="25dp"-->
+                <!--app:expandable_area_color="#200cb7"-->
+                <!--app:hide_text="Login"-->
+                <!--app:hide_text_size="15dp"-->
+                <!--app:icon_button_color="#375dda"-->
+                <!--app:magic_button_size="50dp" />-->
+
+            <!--<br.com.bloder.magic.view.MagicButton-->
+                <!--android:id="@+id/joinBtn"-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:text="회원가입"-->
+                <!--app:button_icon="@drawable/join"-->
+                <!--app:button_icon_height="25dp"-->
+                <!--app:button_icon_width="25dp"-->
+                <!--app:expandable_area_color="#200cb7"-->
+                <!--app:hide_text="Login"-->
+                <!--app:hide_text_size="15dp"-->
+                <!--app:icon_button_color="#375dda"-->
+                <!--app:magic_button_size="50dp" />-->
+
+            <Button
+            android:id="@+id/loginbtn"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:text="로그인"
+            android:layout_gravity="center"
+            android:background="@color/colorGray"
+            />
+
+            <Button
+            android:id="@+id/joinbtn"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:text="회원가입"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

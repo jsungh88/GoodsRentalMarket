@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="200dp"
+    android:layout_height="300dp"
+    android:layout_gravity="center"
+    android:backgroundTint="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="com.example.joanne.practice_layout01.category_list">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioBtn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="취미/도서/티켓"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radioBtn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="가구/생활/주방/식품" />
+
+        <RadioButton
+            android:id="@+id/radioBtn3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="출산/유아동" />
+
+        <RadioButton
+            android:id="@+id/radioBtn4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="가전/디지털/컴퓨터" />
+
+        <RadioButton
+            android:id="@+id/radioBtn5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="패션/뷰티" />
+
+        <RadioButton
+            android:id="@+id/radioBtn6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="스포츠/레저용품" />
+
+        <RadioButton
+            android:id="@+id/radioBtn7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="명품" />
+
+    </RadioGroup>
+</LinearLayout>

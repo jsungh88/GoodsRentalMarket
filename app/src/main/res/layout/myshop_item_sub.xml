@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    android:layout_marginVertical="8dp"
+    android:padding="10dp"
+    android:background="@drawable/border"
+    >
+
+    <LinearLayout
+        android:id="@+id/myshop_lay_checkbox"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/myshop_chk_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:focusable="false"
+            />
+    </LinearLayout>
+
+    //나중에 이미지 넣을 영역.
+    <LinearLayout
+        android:id="@+id/myshop_lay_image"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/myshop_image"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_launcher_background" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/myshop_lay_contents"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:id="@+id/myshop_cont_lay_subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="top"
+            android:paddingVertical="3dp">
+
+            //수정버튼 추가
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/myshop_modify"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/border"
+                    app:srcCompat="@drawable/ic_border_color_black_24dp"
+                    android:visibility="invisible"
+                    android:focusable="false"
+                    ></ImageView>
+
+
+            <TextView
+                android:id="@+id/myshop_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="네셔널지오그래픽 여행캐리어 24인치 (상품명: NG N6501ZS) "
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                />
+            </FrameLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/border_line" />
+        <LinearLayout
+            android:id="@+id/myshop_lay_rentfee"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/myshop_icon01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+            <TextView
+                android:id="@+id/myshop_rent_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="대여료:"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/myshop_rent_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="3,000"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"/>
+
+            <TextView
+                android:id="@+id/myshop_rent_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textSize="13dp"
+                android:text="원"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"/>
+
+            <TextView
+                android:id="@+id/myshop_rent_gijun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="[1일 기준]"
+                android:textSize="11dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/myshop_lay_deposit"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <ImageView
+                android:id="@+id/myshop_icon02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+            <TextView
+                android:id="@+id/myshop_deposit_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="보증금:"
+                android:layout_marginLeft="5dp"
+                android:textSize="13dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/myshop_deposit_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="10,000"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/myshop_deposit_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="원"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/myshop_lay_state"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <ImageView
+                android:id="@+id/myshop_icon03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+            <TextView
+                android:id="@+id/myshop_state_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="상태:"
+                android:layout_marginLeft="5dp"
+                android:textSize="13dp"
+
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/myshop_state_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="대여가능"
+                android:textSize="13dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/myshop_cont_lay_deposit"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <ImageView
+                android:id="@+id/myshop_icon04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+            <TextView
+                android:id="@+id/myshop_date_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="등록일자:"
+                android:layout_marginLeft="5dp"
+                android:textSize="13dp"
+
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/myshop_date_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="2018-02-05"
+                android:textSize="13dp"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

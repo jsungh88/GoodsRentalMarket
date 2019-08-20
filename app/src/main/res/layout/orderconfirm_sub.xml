@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    //top 영역
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical">
+
+        //navigation 영역
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            //뒤로가기
+            <ImageView
+                android:id="@+id/order_btn_back"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+            //타이틀
+            <TextView
+                android:id="@+id/order_pagename_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="주문서"
+                android:textSize="20dp" />
+
+            //홈버튼
+            <ImageView
+                android:id="@+id/order_top_btn_home"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:srcCompat="@drawable/ic_home_black_24dp" />
+
+        </LinearLayout>
+        //navigation 영역 끝
+    </LinearLayout>
+    //top영역 끝
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+
+    //contents 영역
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        //테이블 시작
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            //주문번호
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    />
+
+                <TextView
+                    android:text="주문번호:"
+                    android:layout_margin="10dp"
+                    />
+                <TextView
+                    android:id="@+id/draft_ordernum"
+                    android:text="201802250001"
+                    android:layout_margin="10dp"
+                    />
+            </TableRow>
+
+            //주문자명
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    />
+                <TextView
+                    android:text="주문자명:"
+                    android:layout_margin="10dp"/>
+                <TextView
+                    android:id="@+id/draft_ordername"
+                    android:text="주문자01"
+                    android:layout_margin="10dp"/>
+
+            </TableRow>
+
+            //주문일자
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    />
+                <TextView
+                    android:text="주문일시:"
+                    android:layout_margin="10dp"/>
+                <TextView
+                    android:id="@+id/draft_orderdate"
+                    android:text="2018-02-05"
+                    android:layout_margin="10dp"/>
+
+            </TableRow>
+
+            //구분선
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGray"
+                android:layout_marginVertical="10dp"/>
+
+            //주문상태
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    />
+                <TextView
+                    android:text="주문상태:"
+                    android:layout_margin="10dp"/>
+                <TextView
+                    android:id="@+id/draft_orderstate"
+                    android:text="주문 대기"
+                    android:layout_margin="10dp"/>
+
+            </TableRow>
+
+            //주문상태 - 단계표시
+            <!--<TableRow-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="100dp"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--&gt;-->
+                <!--<ImageView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_height="90dp"-->
+                    <!--app:srcCompat="@drawable/border"-->
+                    <!--/>-->
+                <!--<ImageView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_height="90dp"-->
+                    <!--app:srcCompat="@drawable/border"/>-->
+                <!--<ImageView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_height="90dp"-->
+                    <!--app:srcCompat="@drawable/border"/>-->
+                <!--<ImageView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_height="90dp"-->
+                    <!--app:srcCompat="@drawable/border"/>-->
+            <!--</TableRow>-->
+
+            //주문상품
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    />
+                <TextView
+                    android:text="주문상품:"
+                    android:layout_margin="10dp"/>
+                <TextView
+                    android:id="@+id/draft_productname"
+                    android:text="여행캐리어 24인치"
+                    android:layout_margin="10dp"/>
+
+            </TableRow>
+
+            //대여기간
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    />
+                <TextView
+                    android:text="대여기간:"
+                    android:layout_margin="10dp"/>
+                <!--<TextView-->
+                    <!--android:id="@+id/draft_rentdate"-->
+                    <!--android:text="2018-02-05 ~ 2018-02-08"-->
+                    <!--android:layout_margin="10dp"/>-->
+                <TextView
+                    android:id="@+id/draft_gigan"
+                    android:text="[3일간]"
+                    android:layout_margin="10dp"/>
+            </TableRow>
+
+            //대여료
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    />
+                <TextView
+                    android:text="대여료:"
+                    android:layout_margin="10dp"/>
+                <TextView
+                    android:id="@+id/draft_rent"
+                    android:text="9,000"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="10dp"/>
+                <!--<TextView-->
+                    <!--android:text="원"-->
+                    <!--android:layout_margin="10dp"/>-->
+            </TableRow>
+
+            //대여료
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    />
+                <TextView
+                    android:text="보증금:"
+                    android:layout_margin="10dp"/>
+                <TextView
+                    android:id="@+id/draft_deposit"
+                    android:layout_width="wrap_content"
+                    android:text="10,000"
+                    android:layout_margin="10dp"/>
+                <!--<TextView-->
+                    <!--android:text="원"-->
+                    <!--android:layout_margin="10dp"/>-->
+            </TableRow>
+
+            //구분선
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGray"
+                android:layout_marginVertical="10dp">
+            </View>
+
+            //대여자
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    />
+                <TextView
+                    android:text="대여자:"
+                    android:layout_margin="10dp"/>
+                <TextView
+                    android:id="@+id/draft_lendor"
+                    android:text="대여자명01"
+                    android:layout_margin="10dp"/>
+
+                //sms이미지뷰
+                <ImageView
+                    android:id="@+id/draft_btn_sms"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    app:srcCompat="@drawable/ic_sms_black_24dp"
+                    android:text="SMS" />
+                //call 이미지뷰
+                <ImageView
+                    android:id="@+id/draft_btn_dial"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_dialer_sip_black_24dp"
+                    android:text="Dial" />
+            </TableRow>
+
+            //email
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    />
+                <TextView
+                    android:text="E-MAIL:"
+                    android:layout_margin="10dp"/>
+                <TextView
+                    android:id="@+id/draft_email"
+                    android:text="jsungh88@nate.com"
+                    android:layout_margin="10dp"/>
+
+            </TableRow>
+
+            //연락처
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    />
+                <TextView
+                    android:text="연락처:"
+                    android:layout_margin="10dp"/>
+                <TextView
+                    android:id="@+id/draft_contact"
+                    android:text="010-1234-5678"
+                    android:layout_margin="10dp"/>
+
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:paddingHorizontal="20dp"
+        android:layout_marginBottom="10dp"
+        >
+        <Button
+            android:id="@+id/draft_btn_order"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="취소 하기" />
+        <Button
+            android:id="@+id/draft_btn_main"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="주문 하기" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

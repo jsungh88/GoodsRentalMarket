@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+
+    //프로필 이미지 영역
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:text="회원 가입"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/join_profile"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginBottom="20dp"
+            android:cropToPadding="true"
+            android:gravity="center"
+            app:srcCompat="@drawable/ic_launcher_background"
+            android:tooltipText="프로픽 이미지 등록"/>
+    </LinearLayout>
+
+
+    //회원정보 입력
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/join_name"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:hint="이름을 입력하세요."
+            android:inputType="textPersonName"
+            android:paddingHorizontal="10dp"
+            android:focusable="true"
+            android:textSize="15dp"
+            android:paddingLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/join_id"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:hint="ID를 입력하세요"
+            android:inputType="textPersonName"
+            android:paddingHorizontal="10dp"
+            android:textSize="15dp"
+            android:paddingLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/join_pw"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:hint="PASSWORD를 입력하세요."
+            android:inputType="textPersonName"
+            android:paddingHorizontal="10dp"
+            android:textSize="15dp"
+            android:paddingLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/join_email"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:hint="ex. market@shareword.com"
+            android:inputType="textPersonName"
+            android:paddingHorizontal="10dp"
+            android:textSize="15dp"
+            android:paddingLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/join_contact"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:hint="ex. 010-1234-5678"
+            android:inputType="textPersonName"
+            android:paddingHorizontal="10dp"
+            android:textSize="15dp"
+            android:paddingLeft="10dp"/>
+
+        <Button
+            android:id="@+id/joinbtn"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:text="회원가입"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="40dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

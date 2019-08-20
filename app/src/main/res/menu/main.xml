@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--<item-->
+        <!--android:id="@+id/action_settings"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:title="@string/action_settings"-->
+        <!--app:showAsAction="never" />-->
+
+    <item android:title="취미/도서/티켓"
+        android:icon="@android:drawable/ic_menu_directions"
+        android:id="@+id/menu_drawer_cate01"/>
+
+    <item android:title="가구/생활/주방/식품"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:id="@+id/menu_drawer_cate02"/>
+
+    <item android:title="출산/유아동"
+        android:icon="@android:drawable/ic_menu_add"
+        android:id="@+id/menu_drawer_cate03"/>
+
+    <item android:title="가전/디지털/컴퓨터"
+        android:icon="@android:drawable/ic_menu_add"
+        android:id="@+id/menu_drawer_cate04"/>
+
+    <item android:title="패션/뷰티"
+        android:icon="@android:drawable/ic_menu_add"
+        android:id="@+id/menu_drawer_cate05"/>
+
+    <item android:title="스포츠/레저용품"
+        android:icon="@android:drawable/ic_menu_add"
+        android:id="@+id/menu_drawer_cate06"/>
+
+    <item android:title="명품"
+        android:icon="@android:drawable/ic_menu_add"
+        android:id="@+id/menu_drawer_cate07"/>
+</menu>

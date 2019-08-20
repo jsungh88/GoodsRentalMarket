@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogInActivity">
+
+    <br.com.bloder.magic.view.MagicButton
+        android:id="@+id/loginbtn"
+        android:layout_width="108dp"
+        android:layout_height="107dp"
+        android:text="로그인"
+        app:button_icon="@drawable/login"
+        app:button_icon_height="25dp"
+        app:button_icon_width="25dp"
+        app:hide_text="Login"
+        app:hide_text_size="15dp"
+        app:icon_button_color="#375dda"
+        app:magic_button_size="50dp"
+        app:expandable_area_color="#200cb7"
+        />
+    <br.com.bloder.magic.view.MagicButton
+        android:id="@+id/joinBtn"
+        android:layout_width="108dp"
+        android:layout_height="107dp"
+        android:text="회원가입"
+        app:button_icon="@drawable/join"
+        app:button_icon_height="25dp"
+        app:button_icon_width="25dp"
+        app:hide_text="Login"
+        app:hide_text_size="15dp"
+        app:icon_button_color="#375dda"
+        app:magic_button_size="50dp"
+        app:expandable_area_color="#200cb7"
+        />
+</LinearLayout>
